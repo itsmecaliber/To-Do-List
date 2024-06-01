@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: transparent;
+  background-image:url(WhatsApp\ Image\ 2024-06-01\ at\ 5.17.32\ PM.jpeg);
+  color: #333333;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  width: 400px;
+  background-color: #ffffff7d;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  background-color:transparent;
+  width: 200px;
+  color: #151b19;
+  height: 50px;
+  margin:0;
+  padding: 20px;
+  text-align: center;
+  padding-left: 100px;
+  /* text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff; */
+  
+}
+
+/* TodoForm Styles */
+.TodoForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.todo-input {
+  padding: 10px;
+  background-color: #151b19;
+  color: #a3a2a2;
+  font-size: 16px;
+  border: 2px solid #757575;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.todo-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #151b19;
+  color: #a3a2a2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-btn:hover {
+  background-color: #19153a;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* TodoList Styles */
+.TodoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* TodoItem Styles */
+.TodoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.TodoItem:nth-child(odd) {
+  background-color: #f9f9fc;
+}
+
+.TodoItem.completed span {
+  text-decoration: line-through;
+  color: #888;
+  
+}
+
+.TodoItem button {
+  background-color: transparent;
+  border: none;
+  color: #6a0dad;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.TodoItem button:hover {
+  color: #19153a;
+}
+
+/* Controls Styles */
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.controls label {
+  font-size: 14px;
+}
+
+.controls select {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+}
